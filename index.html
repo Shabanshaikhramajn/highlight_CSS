@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>highlight</title>
+<style>
+
+body{
+
+    height: 100vh;
+    background-color: blueviolet;
+    display: grid;
+    place-items: center;
+
+    font-size: 62.5%;
+
+}
+
+h1{
+    font-size: 6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+
+}
+
+h1::before{
+    position: absolute;
+    content: "shaban...";
+    width: 80%;
+    color: yellow;
+    border-right: 4px solid yellow;
+    text-decoration: underline;
+    overflow: hidden;
+    animation: high 2s linear  infinite  ;
+}
+
+@keyframes high {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+    
+
+<h1>shaban...</h1>
+
+
+</body>
+</html>
